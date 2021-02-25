@@ -1,3 +1,42 @@
+# BREWERIES HOME PAGE
+
+This App can be used to help people find breweries for where-ever they may be traveling to in the United States. 
+
+## Getting Started
+
+
+These instructions the user with critical information d for those individuals that are looking for breweries to experience during their travels.
+
+### Brief Example
+
+
+
+
+
+### Current Features
+
+Features will be 
+
+### `Search by City`
+
+Users can filter by the respective city that they would like to find the local breweries.
+
+
+### `Search by State`
+
+Users can filter by the respective State that they would like to find the local breweries.
+
+### List of Technologies Used
+
+
+### Installations Instructions / Getting Started
+
+1. 
+
+### Contribution Guidelines
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
