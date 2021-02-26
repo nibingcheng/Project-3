@@ -9,6 +9,6 @@ The _`WIREFRAME`_ concept for this App was broken into 3 Pages.
 2. The _Results Page_ is shown to the left.
 3. The _Bonus Page_ is shown to the right. 
 
-Wireframe Concept
+## Wireframe Concept
 
 ![Image](./src/Images/Wireframe.jpg)
