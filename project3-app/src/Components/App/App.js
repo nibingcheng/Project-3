@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, Link, Switch, Redirect } from "react-router-dom";
-// import Home from './Home'
-// import Results from './Results'
+import Home from '../Home/Home';
+import Results from '../Results/Results';
 import axios from "axios";
 
 
@@ -14,7 +14,7 @@ class App extends Component {
       state:[]
     }
 }
-citySearch=()=>{
+citySearch=(city)=>{
   axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`, {
   headers: {
       Accept: 'application/json'
@@ -22,13 +22,15 @@ citySearch=()=>{
 })
   .then(response =>{
     this.setState({
-      city:response.data,
-      
-    })
+      city:response.data,    
+    });
+  })
+  .catch(err => {
+    console.error(err)
   })
 }
 
-stateSearch=()=>{
+stateSearch=(state)=>{
   axios.get(`https://api.openbrewerydb.org/breweries?by_state=${state}`, {
   headers: {
       Accept: 'application/json'
@@ -37,7 +39,10 @@ stateSearch=()=>{
   .then(response =>{
     this.setState({
       state:response.data
-    })
+    });
+  })
+  .catch(err => {
+    console.error(err)
   })
 }
 
