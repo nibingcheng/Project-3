@@ -4,106 +4,49 @@ This App can be used to help people find breweries for where-ever they may be tr
 
 ## Getting Started
 
-
-These instructions the user with critical information d for those individuals that are looking for breweries to experience during their travels.
-
-### Brief Example
-
-
-
-
+Our Breweries Home Page can provide the end USER with the Name, Address, City, and State for any Brewery within your Search criteria. 
 
 ### Current Features
 
-Features will be 
+Our Current Features allow user to filter by _City_, _State_, or _Type_. 
+These features are described below. 
 
-### `Search by City`
+### `Search by CITY`
 
-Users can filter by the respective city that they would like to find the local breweries.
+To filter by CITY, the  can select the respective city that they would like to find the local breweries. An Example may be _Ankeny_ or _San Diego_.
+
+### `Search by STATE`
+
+To filter by STATE, they can select the respective STATE that they would like to find the breweries. An Example may be _Iowa_ or _California_.
+
+### `Search by TYPE`
+
+To filter by TYPE, the can select the respective TYPE that they would like to find the local breweries. An Example may be _nano_ or _regional_ or _micro_.
+
+`micro` - Most craft breweries are considered a micro brewery
+`nano` - Extremely small brewery which typically only distributes locally.
+`regional` - A regional location of an an expanded brewery. Ex. Sierra Nevada's Asheville, NC Location
+`large` - A very large brewery. Ex. Miller-Coors 
+
+### List of TECHNOLOGIES Used
+
+React
+HTML 5
+Java Script ES6.0
+Axios
+API 
+Heroku
+
+### API Reference
+
+The API used for this project can be located by clicking the following link:
+
+Link =  `https://www.openbrewerydb.org/documentation/01-listbreweries`
+
+### Contributors
+
+Marc Rivers 
+Bincheng Ni 
+Gregg Machetta 
 
 
-### `Search by State`
-
-Users can filter by the respective State that they would like to find the local breweries.
-
-### List of Technologies Used
-
-
-### Installations Instructions / Getting Started
-
-1. 
-
-### Contribution Guidelines
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
