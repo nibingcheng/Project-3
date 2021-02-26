@@ -20,7 +20,7 @@ To filter by `CITY`, the  can select the respective city that they would like to
 
 To filter by `STATE`, they can select the respective STATE that they would like to find the breweries. An Example may be _Iowa_ or _California_.
 
-### `Search by TYPE`
+### `Filter by TYPE`
 
 To filter by `TYPE`, the can select the respective TYPE that they would like to find the local breweries. An Example may be _nano_ or _regional_ or _micro_.
 
