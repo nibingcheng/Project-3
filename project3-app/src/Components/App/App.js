@@ -15,7 +15,7 @@ class App extends Component {
     }
 }
 citySearch=(city)=>{
-  axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`, {
+  axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=50`, {
   headers: {
       Accept: 'application/json'
   }
@@ -31,7 +31,7 @@ citySearch=(city)=>{
 }
 
 stateSearch=(state)=>{
-  axios.get(`https://api.openbrewerydb.org/breweries?by_state=${state}`, {
+  axios.get(`https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=50`, {
   headers: {
       Accept: 'application/json'
   }

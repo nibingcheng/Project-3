@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Home extends Component {
@@ -34,25 +34,22 @@ class Home extends Component {
     }
 
     render() {
-        console.log("city selection:", this.state.citySelected);
-        console.log("state selection:", this.state.stateSelected);
-        
+        console.log(this.props);
         return (
             <div className="Home">
                 <div>
                     <input type="text" placeholder="City Name" onChange={this.handleCity}/>
-                    {/* <Link to='/'> */}
-                    <button type='submit' onClick={this.handleSubmit}>Submit</button>
-                    {/* </Link> */}
+                    <Link to='/'>
+                    <button type='submit' onClick={this.handleCitySubmit}>Submit</button>
+                    </Link>
                     <br /><br />
                 </div>
                 
                 <div>
                     <input type="text" placeholder="State Name" onChange={this.handleState}/>
-                    {/* <Link to='/'> */}
-                    <button type='submit' onClick={this.handleSubmit}>Submit</button>
-                    {/* </Link> */}
-                    <br /><br />
+                    <Link to='/'>
+                    <button type='submit' onClick={this.handleStateSubmit}>Submit</button>
+                    </Link>
                 </div>
 
                 {/* {parksList} */}
