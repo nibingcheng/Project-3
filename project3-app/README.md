@@ -2,7 +2,8 @@
 
 This App can be used to help people find breweries for where-ever they may be traveling to in the United States. 
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image](https://octodex.github.com/images/yaktocat.png)
+![Image](https://backyardbrewerynh.com/wp-content/uploads/2018/12/Beer.png)
 
 ## Getting Started
 
