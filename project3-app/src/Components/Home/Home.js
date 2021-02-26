@@ -14,6 +14,7 @@ class Home extends Component {
         return (
             <div className="Home">
                 <div>
+                    <h3>Search by City</h3>
                 <form onSubmit={(event)=>{
                     event.preventDefault();
                     this.props.citySearch(event.target.city.value)
@@ -28,6 +29,7 @@ class Home extends Component {
                 </div>
                 
                 <div>
+                    <h3>Search by State</h3>
                 <form onSubmit={(event)=>{
                     event.preventDefault();
                     this.props.stateSearch(event.target.state.value)
