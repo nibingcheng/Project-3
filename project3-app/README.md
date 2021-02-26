@@ -24,18 +24,21 @@ To filter by STATE, they can select the respective STATE that they would like to
 To filter by TYPE, the can select the respective TYPE that they would like to find the local breweries. An Example may be _nano_ or _regional_ or _micro_.
 
 `micro` - Most craft breweries are considered a micro brewery
+<br/>
 `nano` - Extremely small brewery which typically only distributes locally.
+<br/>
 `regional` - A regional location of an an expanded brewery. Ex. Sierra Nevada's Asheville, NC Location
+<br/>
 `large` - A very large brewery. Ex. Miller-Coors 
 
 ### List of TECHNOLOGIES Used
 
-React
-HTML 5
-Java Script ES6.0
-Axios
-API 
-Heroku
+React <br/>
+HTML 5 <br/>
+Java Script ES6.0 <br/>
+Axios <br/>
+API <br/>
+Heroku <br/>
 
 ### API Reference
 
@@ -45,8 +48,8 @@ Link =  `https://www.openbrewerydb.org/documentation/01-listbreweries`
 
 ### Contributors
 
-Marc Rivers 
-Bincheng Ni 
+Marc Rivers, <br/>
+Bincheng Ni, <br/>
 Gregg Machetta 
 
 
