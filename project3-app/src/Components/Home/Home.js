@@ -1,58 +1,50 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 
 class Home extends Component {
     constructor(props) {
         super(props)
     
-        this.state = {
-          citySelected: [],
-          stateSelected: []
-        }
       }
-
-    handleCity=(e)=>{ 
-        e.preventDefault();
-        this.setState ({
-            citySelected: e.target.value
-        })
-    }
-    handleState=(e)=>{ 
-        e.preventDefault();
-        this.setState ({
-            stateSelected: e.target.value
-        })
-    }
-    handleCitySubmit=(e)=>{ 
-        e.preventDefault();    
-        this.props.citySearch(this.state.citySelected);
-    }
-    handleStateSubmit=(e)=>{ 
-        e.preventDefault();    
-        this.props.stateSearch(this.state.stateSelected);
-    }
 
     render() {
         console.log(this.props);
+        console.log(window.location)
         return (
             <div className="Home">
                 <div>
-                    <input type="text" placeholder="City Name" onChange={this.handleCity}/>
-                    <Link to='/'>
-                    <button type='submit' onClick={this.handleCitySubmit}>Submit</button>
-                    </Link>
+                    <h3>Search by City</h3>
+                <form onSubmit={(event)=>{
+                    event.preventDefault();
+                    this.props.citySearch(event.target.city.value)
+                    this.props.history.push("/results")
+                }}>
+                    <input type="text" id="City Name" name="city"/>
+                    
+                    <input type='submit' value="submit"/>
+                    
                     <br /><br />
+                    </form><br />
                 </div>
                 
                 <div>
-                    <input type="text" placeholder="State Name" onChange={this.handleState}/>
-                    <Link to='/'>
-                    <button type='submit' onClick={this.handleStateSubmit}>Submit</button>
-                    </Link>
+                    <h3>Search by State</h3>
+                <form onSubmit={(event)=>{
+                    event.preventDefault();
+                    this.props.stateSearch(event.target.state.value)
+                    this.props.history.push("/results")
+                    
+                }}>
+                    <input type="text" id="State Name" name="state"/>
+                    
+                    <input type='submit' value="submit"/>
+                    
+                    <br /><br />
+                    </form><br />
                 </div>
 
-                {/* {parksList} */}
+                
 
             </div>
         );
