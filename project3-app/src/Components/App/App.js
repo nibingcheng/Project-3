@@ -22,7 +22,8 @@ citySearch=(city)=>{
 })
   .then(response =>{
     this.setState({
-      city:response.data,    
+      city:response.data, 
+      state: []   
     });
   })
   .catch(err => {
@@ -38,7 +39,8 @@ stateSearch=(state)=>{
 })
   .then(response =>{
     this.setState({
-      state:response.data
+      state:response.data,
+      city: []
     });
   })
   .catch(err => {
@@ -56,13 +58,14 @@ stateSearch=(state)=>{
         <nav><Link to='/'>
           <h3> Test</h3>
           </Link></nav>
+        <Switch>  
           <Route exact path="/" render={routerProps => <Home citySearch={this.citySearch} stateSearch={this.stateSearch} {...routerProps} {...this.state}
           />
           }/>
 
           <Route path="/results" render={routerProps => <Results {...routerProps} {...this.state}/>
           }/>
-
+        </Switch>
       </div>
   
     );

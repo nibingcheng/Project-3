@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
+import { Route, Link } from 'react-router-dom';
+import Results from '../Results/Results';
 
 class Home extends Component {
     constructor(props) {
@@ -35,25 +35,26 @@ class Home extends Component {
 
     render() {
         console.log(this.props);
+
         return (
             <div className="Home">
                 <div>
                     <input type="text" placeholder="City Name" onChange={this.handleCity}/>
-                    <Link to='/'>
-                    <button type='submit' onClick={this.handleCitySubmit}>Submit</button>
-                    </Link>
+                    
+                    <button type='submit' onClick={this.handleCitySubmit}>
+                    <Link to='/results'>Submit</Link>
+                    </button>
                     <br /><br />
                 </div>
                 
                 <div>
                     <input type="text" placeholder="State Name" onChange={this.handleState}/>
-                    <Link to='/'>
-                    <button type='submit' onClick={this.handleStateSubmit}>Submit</button>
-                    </Link>
+                    
+                    <button type='submit' onClick={this.handleStateSubmit}>
+                        <Link to='/results'>Submit</Link>
+                    </button>
+                    
                 </div>
-
-                {/* {parksList} */}
-
             </div>
         );
     }
