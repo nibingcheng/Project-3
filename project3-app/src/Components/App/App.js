@@ -4,6 +4,7 @@ import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from '../Home/Home';
 import Results from '../Results/Results';
 import axios from "axios";
+import Result from '../Result/Result';
 
 
 class App extends Component {
@@ -58,7 +59,7 @@ stateSearch=(state)=>{
       <div>
         <header></header>
         <nav><Link to='/'>
-          <h3> Test</h3>
+          <h3> Welcome to the Brewery App</h3>
           </Link></nav>
         <Switch>  
           <Route exact path="/" render={routerProps => <Home citySearch={this.citySearch} stateSearch={this.stateSearch} {...routerProps} {...this.state}
@@ -67,6 +68,11 @@ stateSearch=(state)=>{
 
           <Route path="/results" render={routerProps => <Results {...routerProps} {...this.state}/>
           }/>
+
+          <Route path="/result/:id" render={routerProps => 
+          <Result {...routerProps} {...this.state}/>
+          }/>
+          
         </Switch>
       </div>
   
