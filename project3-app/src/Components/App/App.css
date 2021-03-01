@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+
+header{
+  height: 50px;
+  background-color: black;
+  color: aliceblue;
+
+}
+/* Footer information Starts */
+.Footer {
+  margin-top: 50px;
+  background-color: burlywood;
+  min-height: 5px;
+  outline: 0.5rem solid khaki;
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem outset pink;
+  color: white;
+  
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+}
+
+#FooterImage {
+  width: 50px;
+  height: 50px;
+  border: #61dafb;
+}
+
+#FooterBWS {
+  font-size: small;
+  color:red;
+
+}
+
+#FooterUSBW {
+font-size: small;
+color: red;
+
+}
+
+
+.facebook {
+  color: #4e64b5;
+}
+
+.twitter {
+  color: #00aced;
+}
+.instagram {
+  color: #9a8f62;
+}
+.youtube {
+  color: #c82929;
+}
+
+.telegram {
+  color: #2ca5e0;
+}
+
+Nav {
+  display: flex;
+  margin-right: 55px;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid red;
+  padding: 0px 15px;
+  border-radius: 5px;
+  
+} 
+
