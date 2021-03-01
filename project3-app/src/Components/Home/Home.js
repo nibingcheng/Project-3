@@ -5,10 +5,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 class Home extends Component {
-    constructor(props) {
-        super(props)
-    
-      }
 
     render() {
         console.log(this.props);
