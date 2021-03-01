@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-
 
 class Home extends Component {
-    constructor(props) {
-        super(props)
-    
-      }
 
     render() {
         console.log(this.props);
@@ -43,10 +37,7 @@ class Home extends Component {
                     <br /><br />
                     </form><br />
                 </div>
-
-                
-
-            </div>
+          </div>
         );
     }
 }

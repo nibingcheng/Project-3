@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import Home from '../Home/Home';
 import Results from '../Results/Results';
 import axios from "axios";
-
+import Result from '../Result/Result';
 
 class App extends Component {
   constructor(props) {
@@ -61,8 +61,13 @@ stateSearch=(state)=>{
           <h3> Test</h3>
           </Link></nav>
         <Switch>  
-          <Route exact path="/" render={routerProps => <Home citySearch={this.citySearch} stateSearch={this.stateSearch} {...routerProps} {...this.state}
+          <Route exact path="/" render={routerProps => 
+          <Home citySearch={this.citySearch} stateSearch={this.stateSearch} {...routerProps} {...this.state}
           />
+          }/>
+          
+          <Route path="/result/:id" render={routerProps => 
+                <Result {...routerProps} {...this.state}/>
           }/>
 
           <Route path="/results" render={routerProps => <Results {...routerProps} {...this.state}/>

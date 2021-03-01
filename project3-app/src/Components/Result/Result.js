@@ -8,8 +8,8 @@ class Result extends Component {
     render() {
         console.log(this.props);
         return (
-            <div className="Results">
-                {/* {individual brewery goes here} */}
+            <div className="Result">
+                <p>individual brewery goes here</p>
 
             </div>
         );
