@@ -8,15 +8,19 @@ class Result extends Component {
 
     render() {
         console.log(this.props.match.params.id)
-        console.log(this.props)
-        
-        const findBrewery = this.props.city.find(city => city.index ===this.props.match.id)
-            console.log(findBrewery)
-           
-        const findBrewery2 = this.props.state.find(state => state.index ===this.props.match.id)
-            console.log(findBrewery)
-        
+        console.log(this.props.city)
+        console.log(this.props.state.length)
+        console.log(this.props.city.length)
 
+       
+        let findBrewery
+        if(this.props.state.length==0){
+        findBrewery = this.props.city.find(item => item.id ==this.props.match.params.id)          
+        }else{
+        findBrewery = this.props.state.find(item => item.id ==this.props.match.params.id)
+            
+        }
+        console.log(findBrewery)
         
         
         return (
@@ -41,26 +45,8 @@ class Result extends Component {
 
             </div>
            
-            {/* <div className="ResultsState">
-                <h1>Result test</h1>
-                <div className="breweryName"><h2>{findBrewery2.name}</h2>
-                </div>
-                <br /><br />
-                <div className="Address">
-                    <h3>Address</h3>
-                    <h4>
-                        {findBrewery2.street}<br />
-                        {findBrewery2.city}, {findBrewery2.state} {findBrewery2.postal_code}<br /><br /><br />
-                    </h4>
-                </div>
-                <div className="phone">
-                    <h3>Phone</h3>
-                    <h4>
-                        {findBrewery2.phone}
-                    </h4>
-                </div>
-
-            </div> */}
+            
+            
             </body>
         );
     }
