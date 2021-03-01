@@ -23,6 +23,7 @@ class Result extends Component {
         // console.log(findBrewery)
         
         return (
+            
             <body>
             <div className="Results">
                 <h1>Brewery Details For:</h1>
