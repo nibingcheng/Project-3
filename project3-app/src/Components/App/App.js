@@ -4,12 +4,9 @@ import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from '../Home/Home';
 import Results from '../Results/Results';
 import axios from "axios";
-<<<<<<< HEAD
-import header from "../Header/Header";
-=======
+import Header from "../Header/Header";
 import Result from '../Result/Result';
->>>>>>> c7488a08347f58adb7a0525fbf41946578b8d6d8
-
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -61,7 +58,9 @@ stateSearch=(state)=>{
     return (
 
       <div>
-        <header></header>
+        <header>
+          <Header/>
+        </header>
         <nav><Link to='/'>
           <h3> Welcome to the Brewery App</h3>
           </Link></nav>
@@ -78,7 +77,15 @@ stateSearch=(state)=>{
           }/>
           
         </Switch>
+
+        <footer>
+          <Footer />
+        </footer>
+
       </div>
+      
+  
+  
   
     );
   }

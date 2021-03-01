@@ -10,14 +10,25 @@ class Header extends Component {
         
         return (
            
+// Header Section of Footer and overall Div
+<div class="header-top">
 
-                
-            <div className='Header'>
-                <h1>Brewery Listing </h1>  
-                <br/>
-                <Nav/>
-            </div>
-            
+<div class="headertitle">Listing of Breweries in the USA" </div>
+<br/>
+{/* For more information, please see below!<br /> */}
+
+
+{/* Navigation Section of Footer */}
+  <nav id="header-navigation" class="site-navigation">
+    <ul id="footer-menu" class="nav-menu">
+      <li id="list1" class="menu1"><a href="#">Home</a></li>
+      <li id="list2" class="menu1"><a href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/wireframe.md">Wireframe</a></li>
+      <li id="list3" class="menu1"><a href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/README.md">ReadME </a></li>
+      <li id="list4" class="menu1"><a href="#">Other</a></li>
+    </ul>
+  </nav>
+
+  </div>          
 
 
         )
