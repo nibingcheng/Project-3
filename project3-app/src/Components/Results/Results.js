@@ -4,14 +4,17 @@ import './Results.css';
 import Result from "../Result/Result";
 
 class Results extends Component {
-
+  constructor(props) {
+    super(props)
+  
+  }
     render() {
         
         let list1 = this.props.city.map(item => {
             return (
               <div className="city" key={item.id}>
                 <p>
-                <Link to={"/result/"+item.id}>{item.name}</Link>
+                <Link to={`/result/${item.id}`}>{item.name}</Link>
                 </p>
               </div>
             );
@@ -20,21 +23,23 @@ class Results extends Component {
             return (
               <div className="state" key={item.id}>
                 <p>
-                <Link to={"/result/"+item.id}>{item.name}</Link>
+                <Link to={`/result/${item.id}`}>{item.name}</Link>
+                
                 </p>
+                
               </div>
             );
           });
-
+          
         return (
             <div className="Results">
                 <div>
                     <div>{list1}</div>
                     <div>{list2}</div>
                 </div>
-                <Route path="/result/:id" render={routerProps => 
-                <Result {...routerProps} {...this.state}/>
-                }/>
+                <div>
+                
+                </div>
             </div>
         );
     }
