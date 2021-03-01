@@ -24,8 +24,7 @@ class Result extends Component {
         
         
         return (
-            <div className="Result">
-                <p>individual brewery goes here</p>
+            
             <body>
             <div className="Results">
                 <h1>Result test</h1>

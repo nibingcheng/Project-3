@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
 import { Link, Redirect } from 'react-router-dom';
 import './Home.css';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
->>>>>>> 87a43ad0fd7ed3eb53f68a89f69c2b27be2c0e5e
 
 class Home extends Component {
 
@@ -50,9 +47,6 @@ class Home extends Component {
                     <br /><br />
                     </form><br />
                 </div>
-<<<<<<< HEAD
-          </div>
-=======
                 </div>
             
             <div>
@@ -62,7 +56,6 @@ class Home extends Component {
             </div>
                
             </body>
->>>>>>> 87a43ad0fd7ed3eb53f68a89f69c2b27be2c0e5e
         );
     }
 

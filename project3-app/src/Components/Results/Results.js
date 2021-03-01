@@ -52,13 +52,9 @@ class Results extends Component {
                     <div>{list1}</div>
                     <div>{list2}</div>
                 </div>
-<<<<<<< HEAD
-     
-=======
                 <div>
                 
                 </div>
->>>>>>> c7488a08347f58adb7a0525fbf41946578b8d6d8
             </div>
         );
     }
