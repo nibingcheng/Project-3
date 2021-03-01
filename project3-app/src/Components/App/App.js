@@ -6,6 +6,7 @@ import Results from '../Results/Results';
 import axios from "axios";
 import Result from '../Result/Result';
 
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -58,7 +59,7 @@ stateSearch=(state)=>{
       <div>
         <header></header>
         <nav><Link to='/'>
-          <h3> Test</h3>
+          <h3> Welcome to the Brewery App</h3>
           </Link></nav>
         <Switch>  
           <Route exact path="/" render={routerProps => 
@@ -72,6 +73,11 @@ stateSearch=(state)=>{
 
           <Route path="/results" render={routerProps => <Results {...routerProps} {...this.state}/>
           }/>
+
+          <Route path="/result/:id" render={routerProps => 
+          <Result {...routerProps} {...this.state}/>
+          }/>
+          
         </Switch>
       </div>
   

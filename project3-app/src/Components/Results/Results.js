@@ -5,13 +5,17 @@ import './Results.css';
 
 class Results extends Component {
     
+  constructor(props) {
+    super(props)
+  
+  }
     render() {
         
         let list1 = this.props.city.map(item => {
             return (
               <div className="city" key={item.id}>
                 <p>
-                <Link to={"/result/"+item.id}>{item.name}</Link>
+                <Link to={`/result/${item.id}`}>{item.name}</Link>
                 </p>
               </div>
             );
@@ -20,12 +24,14 @@ class Results extends Component {
             return (
               <div className="state" key={item.id}>
                 <p>
-                <Link to={"/result/"+item.id}>{item.name}</Link>
+                <Link to={`/result/${item.id}`}>{item.name}</Link>
+                
                 </p>
+                
               </div>
             );
           });
-
+          
         return (
             <div className="Results">
                 <form>
@@ -46,7 +52,13 @@ class Results extends Component {
                     <div>{list1}</div>
                     <div>{list2}</div>
                 </div>
+<<<<<<< HEAD
      
+=======
+                <div>
+                
+                </div>
+>>>>>>> c7488a08347f58adb7a0525fbf41946578b8d6d8
             </div>
         );
     }
