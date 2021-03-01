@@ -4,6 +4,7 @@ import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from '../Home/Home';
 import Results from '../Results/Results';
 import axios from "axios";
+import header from "../Header/Header";
 
 
 class App extends Component {
