@@ -13,7 +13,9 @@ class Home extends Component {
                       
             <div className="Home">
                 <div>
-                    <h3>Search by City</h3>
+
+                <h3 className="apptitle2"> Search by City</h3>
+            
                 <form onSubmit={(event)=>{
                     event.preventDefault();
                     this.props.citySearch(event.target.city.value)
@@ -28,7 +30,8 @@ class Home extends Component {
                 </div>
                 
                 <div>
-                    <h3>Search by State</h3>
+    
+                    <h3 className="apptitle2"> Search by State</h3>
                 <form onSubmit={(event)=>{
                     event.preventDefault();
                     this.props.stateSearch(event.target.state.value)
@@ -38,7 +41,8 @@ class Home extends Component {
                     <input type="text" id="State Name" name="state"/>
                     
                     <input type='submit' value="submit"/>
-                    
+                    <img src ="/src/Images/Beer.jpg" alt="Beer"/>
+
                     <br /><br />
                     </form><br />
                 </div>

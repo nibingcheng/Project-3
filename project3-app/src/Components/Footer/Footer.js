@@ -10,7 +10,7 @@ class Footer extends Component {
           
   
           // Title Section of Footer and overall Div
-          <div className="footer-bottom">
+          <div classNames="footer-bottom">
 
               <div className="copyrighttitle">All Copyrights are prohibited</div>
             
@@ -30,7 +30,7 @@ class Footer extends Component {
   
          {/* Social Links Section of Footer */}
                 <div id="footer-socials">
-                  <div className="socials">
+                  {/* <div class="socials"> */}
   
                     <a href="#" target="_blank" title="Facebook" className="socials-item"> 
                       <img src="../../Images/facebook.jpg" alt="Facebook" />
@@ -49,7 +49,7 @@ class Footer extends Component {
                       <img src ="../../Images/youttube.jpg" alt="YouTube" />
                     </a>
                   
-                  </div>
+                  {/* </div> */}
       
                 </div>
               {/* Copyright Information */}
