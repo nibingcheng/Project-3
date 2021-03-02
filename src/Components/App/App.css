@@ -4,12 +4,15 @@ body{
 
 
 .header{
+    display:flex;
     height: 50px;
     background-color: black;
     color: #b0b0b0;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
-  
+    border: 0.5rem outset khaki;
+
 }
 
 /* Footer CSS begins below */
@@ -50,6 +53,10 @@ body{
     position: relative;
     line-height: 1;
     
+}
+.menu1{
+    color:#99a9b5;
+    text-decoration: none;
 }
 
 .socials{
