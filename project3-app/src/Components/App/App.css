@@ -193,5 +193,18 @@ a.socials-item:hover {
     
 } 
 
+/* Header Page CSS Below */
 
+.Headertitle {
+    
+    color: #b0b0b0;
+    text-align: center;
+    font-size: 25px;
 
+}
+
+.apptitle {
+    text-align: center;
+   margin-top: 50px;
+   background-color: #99a9b5;
+}
