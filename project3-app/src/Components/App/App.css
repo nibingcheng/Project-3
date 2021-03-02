@@ -1,5 +1,10 @@
+body {
+    background-color: rgb(211, 211, 200);
+    
+}
 .App {
   text-align: center;
+  background-color: rgb(135, 117, 117);
 }
 
 .App-logo {
@@ -74,9 +79,7 @@ header{
     margin-left: 65px;
 }  
 
-/* #footer-navigation, #footer-navigation li a:hover {
-    color: white;
-} */
+
 
 #footer-navigation, #footer-navigation li a {
     color: #99a9b5;
@@ -94,28 +97,10 @@ header{
     line-height: 1;
 }
 
-#footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
+/* #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
-}
-
-#footer-menu li+li:before {
-    content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    font-size: 0;
-    border-left: 1px solid #232234;
-    border-right: 1px solid #333146;
-}
-
-
-.navigation li a, .custom-footer, .custom-footer li a {
-    color: #99a9b5;
-    padding-top: 15px;
-}
+} */
 
 #footer-socials {
     text-align: right;
@@ -141,45 +126,16 @@ a.socials-item {
     box-shadow: 3px 9px 16px rgb(0,0,0,0.4), -3px -3px 10px rgba(255,255,255, 0.06), inset 14px 14px 26px rgb(0,0,0,0.3), inset -3px -3px 15px rgba(255,255,255, 0.05);
 }
 
-.socials-item i {
+.socials-item {
     display: inline-block;
     font-weight: normal;
     width: 1em;
     height: 1em;
-    line-height: 1;
     font-size: 16px;
     text-align: center;
     vertical-align: top;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-language-override: normal;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-style: normal;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-weight: normal;
-    text-rendering: auto;
+ 
 }
-
-
-.facebook {
-    color: #4e64b5;
-}
-
-.twitter {
-    color: #00aced;
-}
-.instagram {
-    color: #9a8f62;
-}
-.youtube {
-    color: #c82929;
-}
-
-.telegram {
-    color: #2ca5e0;
-} 
 
 
 a.socials-item:hover {
@@ -205,6 +161,17 @@ a.socials-item:hover {
 
 .apptitle {
     text-align: center;
+   margin-top: 70px;
+   /* background-color: grey; */
+   /* color: #b0b0b0; */
+   color: black;
+
+}
+
+.apptitle2 {
+    text-align: left;
    margin-top: 50px;
-   background-color: #99a9b5;
+   background-color: grey;
+   /* color: #b0b0b0; */
+   color: black;
 }

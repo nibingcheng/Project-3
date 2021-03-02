@@ -33,7 +33,7 @@ class Footer extends Component {
   
          {/* Social Links Section of Footer */}
                 <div id="footer-socials">
-                  <div class="socials">
+                  {/* <div class="socials"> */}
   
                     <a href="#" target="_blank" title="Facebook" class="socials-item"> 
                       <img src ="/src/Images/facebook.jpg" alt="Facebook" />
@@ -51,7 +51,7 @@ class Footer extends Component {
                       <img src ="/src/Images/facebook.jpg" alt="YouTube" />
                     </a>
                   
-                  </div>
+                  {/* </div> */}
       
                 </div>
               {/* Copyright Information */}

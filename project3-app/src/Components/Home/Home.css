@@ -1,18 +1,29 @@
 h3 {
-    font-size: 30px;
-    color: blue;
+    font-size: 23px;
+    /* color: blue; */
 
     
 }
 
 .Home {
-    box-shadow: 0 0 0 2rem skyblue;
-    border-radius: 12px;
+    /* box-shadow: 0 0 0 2rem skyblue; */
+    /* border-radius: 1px; */
     font: bold 1rem sans-serif;
     margin: 2rem;
     padding: 1rem;
     outline-offset: 0.5rem;
-  }
+    text-align: left;
+    margin-top: 50px;
+    background-color: grey;
+
+    padding: 15px 0;
+    /* border-top: 1px solid #313646; */
+    /* background-color: black; */
+    color: #b0b0b0;
+    font-family: rubik;
+    border: 0.5rem outset khaki;
+   
+}
 
   
 

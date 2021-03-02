@@ -117,6 +117,7 @@ class Results extends Component {
                  <div>
                     <div>{list1}</div>
                     <div>{list2}</div>
+                    <img src ='/src/Images/Glassbeer.jpg' alt="Beer Glass" />
                 </div>
             </div>
         );
