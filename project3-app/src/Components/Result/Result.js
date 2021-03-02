@@ -47,19 +47,19 @@ class Result extends Component {
                         {findBrewery.phone}
                     </h4>
                 </div>
-               
-
-            </div>
-            {/* Getting Google map via API */}
+                {/* Getting Google map via API */}
            <div className="map">
             <iframe 
                 width="400"
                 height="400"
                 loading="lazy"
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyC-ACG-lCKdbokZIL8aQczfwruwzB3lVDo&q=${findBrewery.name},${findBrewery.city}+${findBrewery.state}`}
+                // src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyC-ACG-lCKdbokZIL8aQczfwruwzB3lVDo&q=${findBrewery.name},${findBrewery.city}+${findBrewery.state}`}
                 
             ></iframe>
             </div>
+
+            </div>
+           
             </body>
         );
     }
