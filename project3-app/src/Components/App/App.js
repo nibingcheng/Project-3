@@ -63,7 +63,7 @@ stateSearch=(state)=>{
           <Header/>
         </header>        
         <nav><Link to='/'>
-          <h3> Welcome to the Brewery App</h3>
+          <h3> Home</h3>
           </Link></nav>
         <Switch>  
           <Route exact path="/" render={routerProps => 
