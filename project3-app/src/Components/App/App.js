@@ -8,9 +8,6 @@ import Header from "../Header/Header";
 import Result from '../Result/Result';
 import Footer from '../Footer/Footer';
 
-
-
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -64,7 +61,7 @@ stateSearch=(state)=>{
       <div>
         <header>
           <Header/>
-        </header>
+        </header>        
         <nav><Link to='/'>
           <h3> Welcome to the Brewery App</h3>
           </Link></nav>
@@ -86,15 +83,18 @@ stateSearch=(state)=>{
           }/>
           
         </Switch>
+<<<<<<< HEAD
 
         {/* <footer> */}
           {/* <Footer /> */}
         {/* </footer> */}
 
+=======
+        <footer>
+          <Footer />
+        </footer>
+>>>>>>> 929172198e9b9fefdbd07193ec30dbd7e1b5630f
       </div>
-      
-  
-  
   
     );
   }
