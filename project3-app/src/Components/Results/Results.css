@@ -1,23 +1,15 @@
 .Results {
-<<<<<<< HEAD
-    box-shadow: 0 0 0 2rem skyblue;
-    border-radius: 12px;
-    font: bold 1rem sans-serif;
-    margin: 2rem;
-    padding: 1rem;
-    outline-offset: 0.5rem;
-    min-height: 500px;
-  }
-=======
-  /* box-shadow: 0 0 0 2rem skyblue; */
-  /* border-radius: 1px; */
+  
   font: bold 1rem sans-serif;
   margin: 2rem;
   padding: 1rem;
   outline-offset: 0.5rem;
   text-align: left;
-  margin-top: 50px;
-  background-color: grey;
+  margin-top: 10px;
+  background-color: lightgrey;
+  font-family: rubik;
+  border: 0.5rem outset khaki;
+  min-height: 500px;
+   
  
 }
->>>>>>> dbcde47b38c4d8994973e5a5bb191833fa6fa9e2
