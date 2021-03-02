@@ -14,7 +14,7 @@ class Header extends Component {
           // Title Section of Footer and overall Div
           <div class="footer-bottom">
 
-              <div class="copyrighttitle">All Copyrights are prohibited</div>
+              <div class="Headertitle">Welcome to Brewery App</div>
             <br/>
             {/* For more information, please see below!<br /> */}
            
