@@ -71,10 +71,6 @@ stateSearch=(state)=>{
           />
           }/>
           
-          <Route path="/result/:id" render={routerProps => 
-                <Result {...routerProps} {...this.state}/>
-          }/>
-
           <Route path="/results" render={routerProps => <Results {...routerProps} {...this.state}/>
           }/>
 
@@ -83,17 +79,9 @@ stateSearch=(state)=>{
           }/>
           
         </Switch>
-<<<<<<< HEAD
-
-        {/* <footer> */}
-          {/* <Footer /> */}
-        {/* </footer> */}
-
-=======
         <footer>
           <Footer />
         </footer>
->>>>>>> 929172198e9b9fefdbd07193ec30dbd7e1b5630f
       </div>
   
     );
