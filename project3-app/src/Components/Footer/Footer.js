@@ -35,20 +35,20 @@ class Footer extends Component {
                 <div id="footer-socials">
                   <div class="socials">
   
-                    <a href="#" target="_blank" title="Facebook" class="socials-item"> 
-                      <img src ="/src/Images/facebook.jpg" alt="Facebook" />
+                    <a href="" target="_blank" title="Facebook" class="socials-item"> 
+                      <img src ={"../../Images/facebook.jpg"} alt="Facebook" />
                   </a>
 
                     <a href="#" target="_blank" title="Twitter" class="socials-item">
-                      <img src ="/src/Images/facebook.jpg" alt="Twitter" />
+                      <img src ="../../Images/facebook.jpg" alt="Twitter" />
                     </a>
 
                     <a href="#" target="_blank" title="Instagram" class="socials-item">
-                      <img src ="/src/Images/facebook.jpg" alt="InstaGrm" />
+                      <img src ="../../Images/facebook.jpg" alt="InstaGrm" />
                     </a>
 
                     <a href="#" target="_blank" title="YouTube" class="socials-item">
-                      <img src ="/src/Images/facebook.jpg" alt="YouTube" />
+                      <img src ="../../Images/facebook.jpg" alt="YouTube" />
                     </a>
                   
                   </div>
