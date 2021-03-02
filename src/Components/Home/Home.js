@@ -12,8 +12,8 @@ class Home extends Component {
 
                       
             <div className="Home">
+                <div className="boxes">
                 <div>
-
                 <h3 className="apptitle2"> Search by City</h3>
             
                 <form onSubmit={(event)=>{
@@ -41,11 +41,13 @@ class Home extends Component {
                     <input type="text" id="State Name" name="state"/>
                     
                     <input type='submit' value="submit"/>
-                    <img src ="/src/Images/Beer.jpg" alt="Beer"/>
-
                     <br /><br />
                     </form><br />
+
+                    
                 </div>
+                </div>
+                <div className="homeImg" ><img className="img1" src ="../../Images/Beer.jpg" alt="Beer"/></div>
                 </div>
             
             

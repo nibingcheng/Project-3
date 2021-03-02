@@ -64,7 +64,7 @@ body{
     display:flex;
     align-items: center;
 }
-img{
+.imgF{
     height:50px;
     padding-left: 5px;
 }
@@ -80,9 +80,3 @@ img{
 
 }
 
-.apptitle2 {
-    text-align: left;
-    margin-top: 50px;
-    background-color: lightgrey;
-    color: black;
-}
