@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import {Switch, Route, Link, Redirect} from 'react-router-dom';
-import Nav from '../Nav/Nav';
+
 
 class Header extends Component {
   
