@@ -60,6 +60,7 @@ stateSearch=(state)=>{
     console.log(this.state)
     return (
 
+      
       <div>
         <header>
           <Header/>
@@ -86,9 +87,9 @@ stateSearch=(state)=>{
           
         </Switch>
 
-        <footer>
-          <Footer />
-        </footer>
+        {/* <footer> */}
+          {/* <Footer /> */}
+        {/* </footer> */}
 
       </div>
       

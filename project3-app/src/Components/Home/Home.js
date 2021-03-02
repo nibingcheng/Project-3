@@ -12,9 +12,9 @@ class Home extends Component {
         return (
             <body>
 
-            <header>
+            {/* <header>
               <Header/>
-            </header>
+            </header> */}
             
             <div className="Home">
                 <div>

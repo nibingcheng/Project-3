@@ -11,11 +11,12 @@ class Footer extends Component {
         return (
           
           
+  
           // Title Section of Footer and overall Div
           <div class="footer-bottom">
 
               <div class="copyrighttitle">All Copyrights are prohibited</div>
-            <br/>
+            
             {/* For more information, please see below!<br /> */}
            
 
@@ -24,8 +25,8 @@ class Footer extends Component {
                   <ul id="footer-menu" class="nav-menu">
                     <li id="list1" class="menu1"><a href="#">Support</a></li>
                     <li id="list2" class="menu1"><a href="#">Contact Us</a></li>
-                    <li id="list3" class="menu1"><a href="#">Disclaimer</a></li>
-                    <li id="list4" class="menu1"><a href="#">Add more</a></li>
+                    <li id="list3" class="menu1"><a href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/README.md">ReadMe</a></li>
+                    <li id="list4" class="menu1"><a href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/wireframe.md">WireFrame</a></li>
                   </ul>
                 </nav>
             
@@ -58,6 +59,7 @@ class Footer extends Component {
                 <div class="copyright">March 2021 © <a href="https://www.openbrewerydb.org/documentation/01-listbreweries" target="_blank">Brewery Listing </a>
                 </div>
            </div>  
+
 
     ) 
              
