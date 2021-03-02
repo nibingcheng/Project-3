@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Results.css';
-// import Result from "../Result/Result";
 
-class Results extends Component {
-    
+class Results extends Component {    
   constructor(props) {
     super(props)
   
@@ -16,7 +14,6 @@ class Results extends Component {
   }
 
   handleBrewpub=(e)=>{ 
-    // e.preventDefault();  
     this.setState ({
       brewpubCheckBox: e.target.checked
     })   
@@ -33,15 +30,17 @@ class Results extends Component {
   }
 
     render() {
-        console.log('BrewpubCheckBox', this.state.brewpubCheckBox);
-        console.log('MicroCheckBox', this.state.microCheckBox);
-        console.log('RegionalCheckBox', this.state.regionalCheckBox);
+        // console.log('BrewpubCheckBox', this.state.brewpubCheckBox);
+        // console.log('MicroCheckBox', this.state.microCheckBox);
+        // console.log('RegionalCheckBox', this.state.regionalCheckBox);
         let list1 = [];
         let list2 = [];
+        let list1Filtered = [];
+        let list2Filtered = [];
+
         if ((this.state.brewpubCheckBox && this.state.microCheckBox && this.state.regionalCheckBox) ||
             (!this.state.brewpubCheckBox && !this.state.microCheckBox && !this.state.regionalCheckBox)) {
-
-          list1 = this.props.city.map(item => {
+          list1 = this.props.city.map(item => {  //list all per city search
               return (
                 <div className="city" key={item.id}>
                   <p>
@@ -49,8 +48,52 @@ class Results extends Component {
                   </p>
                 </div>
               );
-            });
-          list2 = this.props.state.map(item => {
+          });
+          list2 = this.props.state.map(item => {  //list all per state search
+              return (
+                <div className="state" key={item.id}>
+                  <p>
+                  <Link to={`/result/${item.id}`}>{item.name}</Link> 
+                  </p>
+                </div>
+              );
+          });
+        }else {  //select those per filter checkbox
+          if (this.state.brewpubCheckBox) {
+              list1Filtered = list1Filtered.concat(this.props.city.filter(item => 
+                item.brewery_type === "brewpub"            
+              ));
+              list2Filtered = list2Filtered.concat(this.props.state.filter(item => 
+                item.brewery_type === "brewpub"            
+              ));
+          };
+          if (this.state.microCheckBox) {
+              list1Filtered = list1Filtered.concat(this.props.city.filter(item => 
+                item.brewery_type === "micro"            
+              ));
+              list2Filtered = list2Filtered.concat(this.props.state.filter(item => 
+                item.brewery_type === "micro"            
+              ));
+          };
+          if (this.state.regionalCheckBox) {
+              list1Filtered = list1Filtered.concat(this.props.city.filter(item => 
+                item.brewery_type === "regional"            
+              ));
+              list2Filtered = list2Filtered.concat(this.props.state.filter(item => 
+                item.brewery_type === "regional"            
+              ));
+          };
+
+          list1 = list1Filtered.map(item => { //list of filtered per city search
+            return (
+              <div className="city" key={item.id}>
+                <p>
+                <Link to={`/result/${item.id}`}>{item.name}</Link>
+                </p>
+              </div>
+            );
+          });
+          list2 = list2Filtered.map(item => {  //list of filtered per state search
             return (
               <div className="state" key={item.id}>
                 <p>
@@ -59,57 +102,25 @@ class Results extends Component {
               </div>
             );
           });
-        }else {
-          if (this.state.brewpubCheckBox) {
-            list1 += this.props.city.filter(item => 
-              item.brewery_type === "brewpub"            
-            );
-            list2 += this.props.state.filter(item => 
-              item.brewery_type === "brewpub"            
-            );
-          };
-          if (this.state.microCheckBox) {
-            list1 += this.props.city.filter(item => 
-              item.brewery_type === "micro"            
-            );
-            list2 += this.props.state.filter(item => 
-              item.brewery_type === "micro"            
-            );
-          };
-          if (this.state.brewpubCheckBox) {
-            list1 += this.props.city.filter(item => 
-              item.brewery_type === "regional"            
-            );
-            list2 += this.props.state.filter(item => 
-              item.brewery_type === "regional"            
-            );
-          };
-
         }
-        console.log(list1);
-        console.log(list2);
+    
         return (
             <div className="Results">
-                
                 <div>
-                  <input type="checkbox" id='brewpub' name="brewpub" onClick={this.handleBrewpub}/>
-                  <label>Brewpub</label><br />
-                  <input type="checkbox" id='micro' name="micro" onClick={this.handleMicro}/>
-                  <label>Micro</label><br />
-                  <input type="checkbox" id='regional' name="regional" onClick={this.handleRegional}/>
-                  <label>Regional</label>
+                    <input type="checkbox" id='brewpub' name="brewpub" onClick={this.handleBrewpub}/>
+                    <label>Brewpub</label><br />
+                    <input type="checkbox" id='micro' name="micro" onClick={this.handleMicro}/>
+                    <label>Micro</label><br />
+                    <input type="checkbox" id='regional' name="regional" onClick={this.handleRegional}/>
+                    <label>Regional</label>
                 </div>
                  <div>
                     <div>{list1}</div>
                     <div>{list2}</div>
                 </div>
-                <div>
-                
-                </div>
             </div>
         );
     }
 }
-
 
 export default Results;
