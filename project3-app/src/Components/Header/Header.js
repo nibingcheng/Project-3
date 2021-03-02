@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import {Switch, Route, Link, Redirect} from 'react-router-dom';
-import Nav from '../Nav/Nav';
+
 
 class Header extends Component {
   
@@ -12,7 +10,7 @@ class Header extends Component {
            
  
           // Title Section of Footer and overall Div
-          <div class="footer-bottom">
+          <div className="header">
 
               <div class="Headertitle">Welcome to Brewery App</div>
             <br/>
