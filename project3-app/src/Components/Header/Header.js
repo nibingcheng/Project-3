@@ -10,7 +10,7 @@ class Header extends Component {
            
  
           // Title Section of Footer and overall Div
-          <div class="footer-bottom">
+          <div className="header">
 
               <div class="Headertitle">Welcome to Brewery App</div>
             <br/>
