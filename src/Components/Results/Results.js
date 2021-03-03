@@ -106,18 +106,20 @@ class Results extends Component {
     
         return (
             <div className="Results">
-                <div>
+                <div className="Filter">
                     <input type="checkbox" id='brewpub' name="brewpub" onClick={this.handleBrewpub}/>
-                    <label>Brewpub</label><br />
+                    <label>Brewpub</label><br /><br />
                     <input type="checkbox" id='micro' name="micro" onClick={this.handleMicro}/>
-                    <label>Micro</label><br />
+                    <label>Micro</label><br /><br />
                     <input type="checkbox" id='regional' name="regional" onClick={this.handleRegional}/>
                     <label>Regional</label>
                 </div>
-                 <div>
-                    <div>{list1}</div>
-                    <div>{list2}</div>
-                    <img src ='/src/Images/Glassbeer.jpg' alt="Beer Glass" />
+                 <div id="LS" >
+                    <div >{list1}</div>
+                    <div >{list2}</div>
+                </div>
+                <div className="resImg">
+                <img className="imageR" src ={"../../Images/Glassbeer.jpg"} alt="Beer Glass" />
                 </div>
             </div>
         );

@@ -22,8 +22,8 @@ class Footer extends Component {
                   <ul id="footer-menu" className="nav-menu">
                     <li id="list1" ><a className="menu1" href="#">Support</a></li>
                     <li id="list2" ><a className="menu1" href="#">Contact Us</a></li>
-                    <li id="list3" ><a className="menu1" href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/README.md">ReadMe</a></li>
-                    <li id="list4" ><a className="menu1" href="https://github.com/nibingcheng/Project-3/blob/main/project3-app/wireframe.md">WireFrame</a></li>
+                    <li id="list3" ><a className="menu1" href="https://github.com/nibingcheng/Project-3/blob/main/README.md">ReadMe</a></li>
+                    <li id="list4" ><a className="menu1" href="https://github.com/nibingcheng/Project-3/blob/main/wireframe.md">WireFrame</a></li>
                   </ul>
                 </nav>
             

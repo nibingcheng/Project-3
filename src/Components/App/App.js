@@ -61,10 +61,12 @@ stateSearch=(state)=>{
       <div>
         <header>
           <Header/>
-        </header>        
-        <nav><Link to='/'>
-          <h3 className="apptitle"> Home</h3>
-          </Link></nav>
+        </header> 
+        <div className="apptitle">      
+        <nav>
+          <h3><Link to='/'> Home</Link></h3>
+          </nav>
+          </div> 
         <Switch>  
           <Route exact path="/" render={routerProps => 
           <Home citySearch={this.citySearch} stateSearch={this.stateSearch} {...routerProps} {...this.state}
