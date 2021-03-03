@@ -25,7 +25,8 @@ class Result extends Component {
         return (
             
             <body>
-            <div className="Results">
+            <div className="Result">
+                <div className="info">
                 <h1>Brewery Details For:</h1>
                 <div className="breweryName"><h2>{findBrewery.name}</h2></div>
                 <br />
@@ -47,13 +48,14 @@ class Result extends Component {
                         {findBrewery.phone}
                     </h4>
                 </div>
+                </div>
                 {/* Getting Google map via API */}
            <div className="map">
             <iframe 
                 width="400"
                 height="400"
                 loading="lazy"
-                // src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyC-ACG-lCKdbokZIL8aQczfwruwzB3lVDo&q=${findBrewery.name},${findBrewery.city}+${findBrewery.state}`}
+                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyC-ACG-lCKdbokZIL8aQczfwruwzB3lVDo&q=${findBrewery.name},${findBrewery.city}+${findBrewery.state}`}
                 
             ></iframe>
             </div>
