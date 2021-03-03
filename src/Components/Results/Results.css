@@ -5,11 +5,10 @@
   padding: 1rem;
   outline-offset: 0.5rem;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 150px;  /* was 10px before sticky header implementation */
   background-color: lightgrey;
   font-family: rubik;
   border: 0.5rem outset khaki;
   min-height: 500px;
-   
- 
+
 }
