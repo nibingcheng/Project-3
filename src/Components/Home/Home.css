@@ -13,13 +13,11 @@ h3 {
     font-family: rubik;
     border: 0.5rem outset khaki;
     min-height: 500px;
-    border:2px solid red;
     display:flex;
     justify-content: space-around;
 }
 .homeImg{
     max-width:70%;
-    border:2px solid blue;
     text-align: right;
     display:flex;
     flex-wrap: wrap;
