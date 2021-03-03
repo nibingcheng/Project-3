@@ -12,7 +12,7 @@ class Footer extends Component {
           // Title Section of Footer and overall Div
           <div className="footer-bottom">
 
-              <div className="copyrighttitle">All Copyrights are prohibited</div>
+              <div className="copyrighttitle">All Copyrights Reserved</div>
             
             {/* For more information, please see below!<br /> */}
            

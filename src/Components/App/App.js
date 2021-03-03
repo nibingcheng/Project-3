@@ -7,6 +7,7 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Result from '../Result/Result';
 import Footer from '../Footer/Footer';
+// import { ReactDOM } from "react-dom";
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
       state:[]
     }
 }
+componentDidMount() {window.scrollTo(0, 0)};
 citySearch=(city)=>{
   axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=50`, {
   headers: {

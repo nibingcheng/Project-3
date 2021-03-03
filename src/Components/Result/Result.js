@@ -4,7 +4,7 @@ import './Result.css';
 
 
 class Result extends Component {
-    
+    componentDidMount() {window.scrollTo(0, 0)};
 
     render() {
         // console.log(this.props.match.params.id)

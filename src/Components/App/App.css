@@ -12,9 +12,9 @@ body{
     align-items: center;
     font-size: 25px;
     border: 0.5rem outset khaki;
-position: fixed;
-width: 100%;
-top: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 /* Footer CSS begins below */
@@ -81,11 +81,11 @@ top: 0;
     text-align: center;
     margin-top: 10px;
     color: black;
-position: fixed;
-width: 100%;
-top: 55px;
-background-color: gray;
-min-height: 75px;
-align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 55px;
+    background-color: gray;
+    min-height: 75px;
+    align-items: center;
 }
 

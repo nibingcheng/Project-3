@@ -12,7 +12,7 @@ class Results extends Component {
     regionalCheckBox: false
     }
   }
-
+  componentDidMount() {window.scrollTo(0, 0)};  // reset window scroll
   handleBrewpub=(e)=>{ 
     this.setState ({
       brewpubCheckBox: e.target.checked
